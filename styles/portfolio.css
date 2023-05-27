@@ -68,7 +68,7 @@ a {
   font-weight: bold;
 }
 
-.collaborations .logo {
+.collaborations .logos {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -132,6 +132,43 @@ a {
   padding: 15px 5px 0px;
 }
 
+.logo {
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  font-family: var(--header-font);
+  margin-left: 10px;
+}
+
+nav a {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+nav .selected {
+  color: var(--primary-color);
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -139,6 +176,10 @@ a {
 
   h2 {
     font-size: 44px;
+  }
+
+  nav a {
+    font-size: 14px;
   }
 
   .hero {

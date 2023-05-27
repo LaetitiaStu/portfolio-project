@@ -1,8 +1,37 @@
 
-p {
-    font-family: 'Carlito', sans-serif;
+:root {
+    --header-font: 'Carlito', sans-serif;
+    --primary-color: #693D73;
+    --opacity-color: rgb(105 61 115 / .24);
+    --text-color: #272142;
+}
+
+body {
+    font-family: Palatino;
+}
+
+.hero {
+    background-color: var(--opacity-color);
+    text-align: center;
+    padding: 160px 0;
 }
 h1 {
-    font-family: Palatino;
+    font-family: var(--header-font);
+    font-size: 96px;
     font-weight: bold;
+    margin: 0;
+}
+.hero h2 {
+    font-size: 28px;
+    color: var(--text-color);
+}
+.btn-branding {
+    padding: 15px 35px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    border-color: var(--primary-color);
+    line-height: 34px;
+    color: #fff;
 }

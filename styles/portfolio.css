@@ -33,6 +33,10 @@ ul {
   list-style: square;
 }
 
+a {
+  color: var(--primary-color);
+}
+
 .hero {
   background-color: var(--opacity-color);
   text-align: center;

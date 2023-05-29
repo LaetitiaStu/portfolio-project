@@ -136,6 +136,10 @@ a {
   max-height: 40px;
 }
 
+.contact {
+  margin-right: 30px;
+}
+
 nav {
   padding: 20px 0;
 }
@@ -205,12 +209,20 @@ footer .email-link:hover {
     font-size: 44px;
   }
 
+  .large-h1 {
+    font-size: 28px;
+  }
+
   h2 {
     font-size: 44px;
   }
 
   nav a {
     font-size: 14px;
+  }
+
+  ul {
+    list-style: none;
   }
 
   .hero {
@@ -225,5 +237,17 @@ footer .email-link:hover {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+
+  .collaborations .logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin: 0;
   }
 }

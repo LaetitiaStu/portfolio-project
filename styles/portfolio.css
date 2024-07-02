@@ -159,7 +159,13 @@ a {
   background-color: rgb(107, 62, 117, 0.24);
   border-radius: 4px;
   padding: 25px 25px;
-  margin: 0px, 0px;
+}
+
+.screenplay-status {
+  background-color: #693d73;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 10px;
 }
 
 nav {

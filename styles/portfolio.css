@@ -148,7 +148,9 @@ a {
 }
 
 .logo {
-  max-height: 40px;
+  font-family: var(--header-font);
+  color: #272142;
+  font-size: 30px;
 }
 
 .contact {

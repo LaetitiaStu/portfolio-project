@@ -170,6 +170,39 @@ a {
   padding: 10px 10px;
 }
 
+/*Gallery Poetry*/
+div.scroll-container {
+  background-color: var(--text-color);
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+img.gallery-img {
+  max-height: 300px;
+}
+
+/* Blog Title Format*/
+.blog-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.blog-container .blog-content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffff;
+  width: 100%;
+  padding: 20px;
+}
+
+/*Navigator*/
+
 nav {
   padding: 20px 0;
 }
@@ -232,6 +265,7 @@ nav .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/*Footer*/
 footer {
   margin: 50px 0;
 }
@@ -309,17 +343,4 @@ footer .email-link:hover {
     justify-content: center;
     margin: 0;
   }
-}
-div.scroll-container {
-  background-color: var(--text-color);
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
-}
-
-div.scroll-container img {
-  padding: 10px;
-}
-img.gallery-img {
-  max-height: 300px;
 }

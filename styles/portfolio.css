@@ -8,6 +8,13 @@
 
 body {
   font-family: var(--default-font);
+  background-color: var(--text-color);
+}
+
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 h1 {
@@ -63,15 +70,14 @@ a {
   font-weight: bold;
 }
 
-.collaborations h3 {
-  font-size: 24px;
-  font-weight: bold;
+.content-dark {
+  background-color: #272142;
+  color: #fff;
+  border-radius: 4px;
+  padding: 15px 5px 0px;
 }
-
-.collaborations .logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.content-dark p {
+  color: #fff;
 }
 
 .content {
@@ -82,11 +88,45 @@ a {
   font-size: 14px;
 }
 
-.collaborations {
-  background-color: var(--opacity-color);
-  padding: 20px 80px 80px;
+.project-description {
+  padding: 60px 60px;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.border-content {
+  border: 2px solid var(--opacity-color);
+  border-radius: 4px;
+  padding: 15px 5px 0px;
+}
+
+.logo {
+  font-family: var(--header-font);
+  color: #272142;
+  font-size: 30px;
+}
+
+.contact {
+  margin-right: 30px;
+}
+
+.blogdescription {
+  background-color: rgb(107, 62, 117, 0.24);
+  border-radius: 4px;
+  padding: 25px 25px;
+}
+
+.screenplay-status {
+  background-color: #693d73;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 10px;
+}
+
+/*Buttons*/
 .btn-branding {
   padding: 15px 35px;
   background: var(--primary-color);
@@ -132,42 +172,20 @@ a {
   color: #fff;
 }
 
-.project-description {
-  padding: 60px 60px;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-}
-
-.border-content {
-  border: 2px solid var(--opacity-color);
+.btn-branding-outline-white {
+  padding: 15px 35px;
   border-radius: 4px;
-  padding: 15px 5px 0px;
+  border: 1px solid var(--text-color);
+  background-color: #fff;
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
 }
-
-.logo {
-  font-family: var(--header-font);
-  color: #272142;
-  font-size: 30px;
-}
-
-.contact {
-  margin-right: 30px;
-}
-
-.blogdescription {
-  background-color: rgb(107, 62, 117, 0.24);
-  border-radius: 4px;
-  padding: 25px 25px;
-}
-
-.screenplay-status {
-  background-color: #693d73;
-  border-radius: 20px;
+.btn-branding-outline-white:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
   color: #fff;
-  padding: 10px 10px;
 }
 
 /*Gallery Poetry*/
@@ -181,11 +199,12 @@ div.scroll-container {
 div.scroll-container img {
   padding: 10px;
 }
+
+/*Gallery About*/
 img.gallery-img {
   max-height: 300px;
 }
 
-/*Gallery About*/
 .gallery-column {
   float: left;
   width: 25%;
@@ -248,7 +267,11 @@ img.gallery-img {
 /*Navigator*/
 
 nav {
-  padding: 20px 0;
+  padding: 20px 20px;
+  background-color: var(--text-color);
+}
+nav .logo {
+  color: #fff;
 }
 
 nav ul {
@@ -267,7 +290,7 @@ nav li {
 nav a {
   font-size: 16px;
   font-weight: bold;
-  color: var(--text-color);
+  color: #fff;
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
@@ -288,7 +311,7 @@ nav li.dropdown {
 nav .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--primary-color);
+  background-color: var(--text-color);
   min-width: 160px;
 }
 
@@ -312,6 +335,7 @@ nav .dropdown:hover .dropdown-content {
 /*Footer*/
 footer {
   margin: 50px 0;
+  padding-bottom: 10px;
 }
 
 footer .social-links a {
@@ -351,7 +375,7 @@ footer .email-link:hover {
   }
 
   h2 {
-    font-size: 44px;
+    font-size: 35px;
   }
 
   nav a {
@@ -376,15 +400,13 @@ footer .email-link:hover {
     text-align: center;
   }
 
-  .collaborations .logos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
   .btn {
-    display: flex;
+    display: block;
     justify-content: center;
     margin: 0;
+  }
+
+  img.gallery-img {
+    max-height: 150px;
   }
 }

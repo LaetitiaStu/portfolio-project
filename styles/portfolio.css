@@ -120,9 +120,10 @@ a {
 }
 
 .screenplay-status {
-  background-color: #693d73;
+  border: solid 1px #693d73;
+  background-color: #fff;
   border-radius: 20px;
-  color: #fff;
+  color: var(--text-color);
   padding: 10px 10px;
 }
 

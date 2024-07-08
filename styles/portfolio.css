@@ -367,6 +367,14 @@ footer .email-link:hover {
 }
 
 @media (max-width: 900px) {
+  #wrapper {
+    width: 800px;
+  }
+
+  body {
+    max-width: 600px;
+  }
+
   h1 {
     font-size: 44px;
   }
@@ -388,7 +396,7 @@ footer .email-link:hover {
   }
 
   .hero {
-    padding: 80px 40px;
+    padding: 40px 40px;
   }
 
   .content {
@@ -409,5 +417,9 @@ footer .email-link:hover {
 
   img.gallery-img {
     max-height: 150px;
+  }
+  img {
+    max-height: min-content;
+    justify-content: center;
   }
 }

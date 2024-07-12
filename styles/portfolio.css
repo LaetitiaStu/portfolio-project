@@ -314,6 +314,7 @@ nav .dropdown-content {
   position: absolute;
   background-color: var(--text-color);
   min-width: 160px;
+  z-index: 9999;
 }
 
 nav .dropdown-content a {
